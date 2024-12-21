@@ -103,44 +103,19 @@ const App = () => {
         setLooksVotes([]);
     };
 
-    // // Handle removing the submission flag
-    // const handleRemoveFlag = () => {
-    //     localStorage.removeItem("hasSubmitted");
-    //     setHasSubmitted(false);
-    //     alert("Submission flag removed. You can now vote again.");
-    // };
-
     return (
         <div style={{ padding: "20px", position: "relative" }}>
-            {/* Remove Flag Button */}
-            {/*<button*/}
-            {/*    onClick={handleRemoveFlag}*/}
-            {/*    style={{*/}
-            {/*        position: "absolute",*/}
-            {/*        top: "10px",*/}
-            {/*        right: "10px",*/}
-            {/*        backgroundColor: "red",*/}
-            {/*        color: "white",*/}
-            {/*        border: "none",*/}
-            {/*        borderRadius: "5px",*/}
-            {/*        padding: "5px 10px",*/}
-            {/*        cursor: "pointer",*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    Remove Flag*/}
-            {/*</button>*/}
-
             <h1>Cookie Competition 2024</h1>
-           
 
-            {/* Competitors Grid */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
+            {/* Competitors List */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
                 {competitors.map((competitor) => (
                     <div
                         key={competitor.id}
                         style={{
                             position: "relative",
-                            width: "120px",
+                            width: "80%",
+                            maxWidth: "600px",
                             textAlign: "center",
                             border: "1px solid #ccc",
                             borderRadius: "8px",
@@ -154,17 +129,17 @@ const App = () => {
                         <img
                             src={competitor.imageUrl}
                             alt={competitor.name}
-                            style={{ width: "100%", height: "120px", objectFit: "cover" }}
+                            style={{ width: "100%", height: "auto", objectFit: "cover" }}
                         />
-                        <h4 style={{ margin: "5px 0", fontSize: "14px" }}>{competitor.name}</h4>
+                        <h4 style={{ margin: "10px 0", fontSize: "18px" }}>{competitor.name}</h4>
 
-                        {/* Container for Icons */}
+                        {/* Buttons for Voting */}
                         <div
                             style={{
                                 display: "flex",
                                 justifyContent: "center",
-                                gap: "5px",
-                                marginTop: "5px",
+                                gap: "15px",
+                                marginTop: "10px",
                             }}
                         >
                             {/* Flavor Button */}
@@ -184,7 +159,7 @@ const App = () => {
                                             : "/images/flavor.png"
                                     }
                                     alt="Flavor"
-                                    style={{ width: "24px", height: "24px" }}
+                                    style={{ width: "32px", height: "32px" }}
                                 />
                             </button>
 
@@ -205,7 +180,7 @@ const App = () => {
                                             : "/images/looks.png"
                                     }
                                     alt="Looks"
-                                    style={{ width: "28px", height: "28px" }}
+                                    style={{ width: "36px", height: "36px" }}
                                 />
                             </button>
                         </div>
