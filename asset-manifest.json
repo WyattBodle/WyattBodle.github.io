@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WyattBodle.github.io/static/css/main.5309942d.css",
-    "main.js": "/WyattBodle.github.io/static/js/main.01bd8afd.js",
-    "static/js/488.ff3192f9.chunk.js": "/WyattBodle.github.io/static/js/488.ff3192f9.chunk.js",
-    "index.html": "/WyattBodle.github.io/index.html",
-    "main.5309942d.css.map": "/WyattBodle.github.io/static/css/main.5309942d.css.map",
-    "main.01bd8afd.js.map": "/WyattBodle.github.io/static/js/main.01bd8afd.js.map",
-    "488.ff3192f9.chunk.js.map": "/WyattBodle.github.io/static/js/488.ff3192f9.chunk.js.map"
+    "main.css": "/static/css/main.5309942d.css",
+    "main.js": "/static/js/main.62313062.js",
+    "static/js/488.ff3192f9.chunk.js": "/static/js/488.ff3192f9.chunk.js",
+    "index.html": "/index.html",
+    "main.5309942d.css.map": "/static/css/main.5309942d.css.map",
+    "main.62313062.js.map": "/static/js/main.62313062.js.map",
+    "488.ff3192f9.chunk.js.map": "/static/js/488.ff3192f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5309942d.css",
-    "static/js/main.01bd8afd.js"
+    "static/js/main.62313062.js"
   ]
 }
