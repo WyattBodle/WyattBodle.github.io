@@ -103,33 +103,8 @@ const App = () => {
         setLooksVotes([]);
     };
 
-    // Handle removing the submission flag
-    const handleRemoveFlag = () => {
-        localStorage.removeItem("hasSubmitted");
-        setHasSubmitted(false);
-        alert("Submission flag removed. You can now vote again.");
-    };
-
     return (
         <div style={{ padding: "20px", position: "relative" }}>
-            {/* Remove Flag Button */}
-            <button
-                onClick={handleRemoveFlag}
-                style={{
-                    position: "absolute",
-                    top: "10px",
-                    right: "10px",
-                    backgroundColor: "red",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "5px",
-                    padding: "5px 10px",
-                    cursor: "pointer",
-                }}
-            >
-                Remove Flag
-            </button>
-
             <h1>Cookie Competition 2024</h1>
 
             {/* Competitors List */}
